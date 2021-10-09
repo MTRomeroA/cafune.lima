@@ -1,0 +1,21 @@
+<svg id="esTtU0H5CIw1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 14 40" 
+shape-rendering="geometricPrecision" text-rendering="geometricPrecision" 
+width="50" height="40"><style><![CDATA[#esTtU0H5CIw2_to 
+{animation: esTtU0H5CIw2_to__to 2000ms linear infinite normal forwards}@keyframes 
+esTtU0H5CIw2_to__to { 0% {transform: translate(7px,29.999295px);animation-timing-function: 
+cubic-bezier(0.695,0.275,0.415,0.755)} 50% {transform: translate(7px,36.200396px);animation-
+timing-function: cubic-bezier(0.695,0.275,0.415,0.755)} 100% {transform: translate(7px,29.999295px)}}
+ #esTtU0H5CIw2_ts {animation: esTtU0H5CIw2_ts__ts 2000ms linear infinite normal forwards}@keyframes 
+ esTtU0H5CIw2_ts__ts { 0% {transform: scale(1,1);animation-timing-function: cubic-bezier(0.25,1,0.25,1)}
+  50% {transform: scale(1,1.05);animation-timing-function: cubic-bezier(0.25,1,0.25,1)} 100% 
+  {transform: scale(1,1)}}]]></style><g id="esTtU0H5CIw2_to" transform="translate(7,29.999295)">
+  <g id="esTtU0H5CIw2_ts" transform="scale(1,1)"><g id="esTtU0H5CIw2"
+   transform="translate(-6.999999,-26.714139)"><path id="esTtU0H5CIw3" d="M7,0L7,26.71414" 
+   fill="none" stroke="rgb(124,100,54)" stroke-width="1" stroke-linecap="round"/>
+   <path id="esTtU0H5CIw4" d="M1.205469,22.505393L6.503297,28.055726" 
+   transform="matrix(-1.047599 0 0 1 13.812847 -1.341586)" fill="none" 
+   stroke="rgb(124,100,54)" stroke-width="1" stroke-linecap="round"/>
+   <path id="esTtU0H5CIw5" d="M1.205469,22.505393L6.755802,28.055726"
+    transform="matrix(1 0 0 1 0.244199 -1.341586)" fill="none" stroke="rgb(124,100,54)" 
+    stroke-width="1" stroke-linecap="round"/></g></g></g></svg>
