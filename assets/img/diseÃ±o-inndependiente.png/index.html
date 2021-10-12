@@ -9,7 +9,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../../built/screen_v%3D185c604d72.css">
+    <link rel="stylesheet" type="text/css" href="../../built/screen_v%3D8c286dff04.css">
 
     <meta name="generator" content="Ghost 3.42">
     <link rel="alternate" type="application/rss+xml" title="Cafune" href="https://www.cafune-lima.com//rss/">
@@ -26,8 +26,8 @@
     <div class="inner">
         <nav class="site-nav">
         <div class="mobileNavIcons">
-            <a class="site-nav-logo" ref="https://www.cafune-lima.com/"><img src="../../../content/images/2021/10/IconCafune.png" alt="Cafune"></a>
-            <a id="mobileToggleHam" class="hamburgerMenu" role="button"><img src="../hamburger.svg" alt="menu">
+            <a class="site-nav-logo" href="../../../"><img src="../../../content/images/2021/10/IconCafune.png" alt="Cafune"></a>
+            <a id="mobileToggleHam" class="hamburgerMenu " role="button"><img src="../hamburger.svg" alt="menu">
 
             </a>
         </div>                            <div class="site-nav-left-wrapper">
@@ -39,19 +39,19 @@
     <ul class="navig">
         <!-- Loop through the navigation items -->
         
-        <li class="nav-link nav-delivery"><a href="../../../#delivery/">Delivery</a></li>
+        <li class="nav-link nav-delivery"><a href="#delivery">Delivery</a></li>
 
         
-        <li class="nav-link nav-nosotras"><a href="../../../#nosotras/">Nosotras</a></li>
+        <li class="nav-link nav-coleccion"><a href="#coleccion">Colección</a></li>
 
         
         <li class="nav-link nav-inicio"><a href="../../../">Inicio</a></li>
 
         
-        <li class="nav-link nav-coleccion"><a href="../../../#coleccion/">Colección</a></li>
+        <li class="nav-link nav-nosotras"><a href="#nosotras">Nosotras</a></li>
 
         
-        <li class="nav-link nav-contacto"><a href="../../../#contacto/">Contacto</a></li>
+        <li class="nav-link nav-contacto"><a href="#Contacto">Contacto</a></li>
 
         <!-- End the loop -->
     </ul>
@@ -173,7 +173,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous">
     </script>
-    <script src="../../built/casper_v%3D185c604d72.js"></script>
+    <script src="../../built/casper_v%3D8c286dff04.js"></script>
 
     <script>
         // Parse the URL parameter
@@ -213,17 +213,30 @@
     </script>
     
 
-    <script src="../../js/mobileNav_v%3D185c604d72.js"></script>
+    <script src="../../js/mobilenav_v%3D8c286dff04.js.html"></script>
     <script>
+
         var toggle = document.querySelector('#mobileToggleHam');
-var menu = document.querySelector('.site-nav-content');
-var links = document.querySelectorAll('.nav-link');
+        var menu = document.querySelector('.site-nav-content');
+        var links = document.querySelectorAll('.nav-link');
+        let linksArray= Array.from(links);
 
-toggle.addEventListener('click', toggleMenu); 
+        document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', event => {
+            //handle click
 
-function toggleMenu() {
-    menu.classList.toggle('site-nav-content-open');
-}   
+            if (menu.classList.contains('site-nav-content-open')){
+                menu.classList.remove('site-nav-content-open');
+                }
+        })
+        })
+
+        toggle.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+        menu.classList.toggle('site-nav-content-open');
+        }   
+
     </script>
 
     
