@@ -9,7 +9,8 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen_v%3D8c286dff04.css">
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen_v%3D7decd84456.css">
+     <script src="../assets/js/lib/bodyScrollLock_v%3D7decd84456.js"></script>
 
     <link rel="icon" href="../favicon.png" type="image/png">
     <link rel="canonical" href="https://www.cafune-lima.com//trepadores/">
@@ -339,7 +340,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous">
     </script>
-    <script src="../assets/built/casper_v%3D8c286dff04.js"></script>
+    <script src="../assets/built/casper_v%3D7decd84456.js"></script>
 
     <script>
         // Parse the URL parameter
@@ -379,13 +380,14 @@
     </script>
     
 
-    <script src="../assets/js/mobilenav_v%3D8c286dff04.js.html"></script>
     <script>
-
+        
+        let root = document.getElementsByTagName( 'body' )[0]; // '0' to assign the first (and only `HTML` tag)
         var toggle = document.querySelector('#mobileToggleHam');
         var menu = document.querySelector('.site-nav-content');
         var links = document.querySelectorAll('.nav-link');
         let linksArray= Array.from(links);
+        const targetElement=menu;
 
         document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', event => {
@@ -393,6 +395,8 @@
 
             if (menu.classList.contains('site-nav-content-open')){
                 menu.classList.remove('site-nav-content-open');
+                document.documentElement.style.overflowY = "scroll";
+                bodyScrollLock.enableBodyScroll(targetElement); 
                 }
         })
         })
@@ -400,8 +404,32 @@
         toggle.addEventListener('click', toggleMenu);
 
         function toggleMenu() {
-        menu.classList.toggle('site-nav-content-open');
-        }   
+            menu.classList.toggle('site-nav-content-open');
+        if (menu.classList.contains('site-nav-content-open')) {
+             noScroll();
+            bodyScrollLock.disableBodyScroll(targetElement);
+        }
+        else {
+            document.documentElement.style.overflowY = "scroll";
+                bodyScrollLock.enableBodyScroll(targetElement); 
+        }
+       
+        } 
+
+        function noScroll() {
+
+         if (menu.classList.contains('site-nav-content-open')){
+            
+           document.documentElement.style.overflowY = "hidden";    
+         }}  
+
+        
+
+
+    </script>
+
+    <script>
+
 
     </script>
 
