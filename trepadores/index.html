@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../assets/built/screen_v%3Dd65f69f575.css">
-     <script src="../assets/js/lib/bodyscrolllock_v%3Dd65f69f575.js.html"></script>
 
     <link rel="icon" href="../favicon.png" type="image/png">
     <link rel="canonical" href="https://www.cafune-lima.com//trepadores/">
@@ -325,7 +324,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous">
     </script>
     <script src="../assets/built/casper_v%3Dd65f69f575.js"></script>
-    <script src="../assets/plugin/bodyScrollLock_v%3Dd65f69f575.js"></script>
 
     <script>
         // Parse the URL parameter
@@ -381,7 +379,6 @@
             if (menu.classList.contains('site-nav-content-open')){
                 menu.classList.remove('site-nav-content-open');
                 document.documentElement.style.overflowY = "scroll";
-                bodyScrollLock.enableBodyScroll(targetElement); 
                 }
         })
         })
@@ -392,11 +389,9 @@
             menu.classList.toggle('site-nav-content-open');
         if (menu.classList.contains('site-nav-content-open')) {
              noScroll();
-            bodyScrollLock.disableBodyScroll(targetElement);
         }
         else {
             document.documentElement.style.overflowY = "scroll";
-                bodyScrollLock.enableBodyScroll(targetElement); 
         }
        
         } 
