@@ -928,7 +928,7 @@ h2 {
 }
 
 .diseno-independiente:before {
-    content: url(../img/diseno-independiente.svg/);
+    content: url(../img/diseno-independiente.svg);
     vertical-align: text-top
 }
 
@@ -982,7 +982,7 @@ h2 {
     margin-top: 3rem;
     -o-object-fit: cover;
     object-fit: cover;
-    min-height: 300px;
+    min-height: 100%;
     overflow: hidden
 }
 
