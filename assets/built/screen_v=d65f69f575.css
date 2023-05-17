@@ -781,7 +781,8 @@ p {
 }
 
 .header-left {
-    padding: 0 3rem 0 0
+    margin-top: 4rem;
+    padding: 0 3rem 1rem
 }
 
 @media (max-width:968px) {
@@ -979,7 +980,6 @@ h2 {
 }
 
 #introRight .section-container {
-    margin-top: 3rem;
     -o-object-fit: cover;
     object-fit: cover;
     min-height: 100%;
@@ -1114,6 +1114,9 @@ p {
         height: 100%;
         overflow: hidden
     }
+    #introLeft .section-container h2 {
+        margin-top: 0;
+    }
 
     .row-reverse {
         flex-direction: row-reverse !important
@@ -1153,7 +1156,8 @@ p {
     }
 
     #deliveryLeft h2 {
-        font-size: 2.8em
+        font-size: 2.8em;
+        margin-top: 0;
     }
 }
 
@@ -1253,7 +1257,7 @@ p {
 
     #deliveryLeft,
     #nosotras {
-        padding: 0 0 0 25px
+        padding: 0 0 0 4rem
     }
 }
 
@@ -2092,6 +2096,11 @@ body {
     .post-full-header {
         padding-right: 5vw;
         padding-left: 5vw
+    }
+
+    #finalSection .outer-static #hoja2  {
+        right: -30px;
+        bottom: -10px;
     }
 }
 
